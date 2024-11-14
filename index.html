@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EJEMPLO GPS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>TIENDA EJEMPLO</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+	<section id="productos" class="galeria">
+        <h1>Productos</h1>
+        <div class="mosaico">
+            <div class="producto"><img src="pollo.jpg" alt="Pollo"><p>Pollo</p></div>
+            <div class="producto"><img src="cocacola.jpg" alt="CocaCola"><p>CocaCola</p></div>
+            <div class="producto"><img src="hamburguesa.jpg" alt="Cabra"><p>Cabra</p></div>
+            <div class="producto"><img src="sprite.jpeg" alt="Sprite"><p>Sprite</p></div>
+        </div>
+    </section>
+    <section class="contenido">
+        <h2>Encuéntranos en la ubicación que aparece en el mapa a continuación</h2>
+        <div id="map"></div>
+        <div class="controls">
+			<button onclick="alternarModo()">Modo Oscuro / Claro</button>
+            <button onclick="alternarStreetView()">Alternar vista del mapa</button>
+            <button onclick="calcularRuta()">Ver Ruta desde mi ubicacion</button>
+			<button onclick="cancelarRuta()">Cancelar Ruta</button>
+        </div>
+    </section>
+	<footer>
+        <p>Juan David Gómez. Exposicion GPS. Sistemas Operativos II.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=LLaveDeGoogle=iniciarMap"></script>
+</body>
+</html>
+3
